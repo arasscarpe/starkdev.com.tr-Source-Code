@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stark Developer | Teknoloji Çözümleri</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" class="logo">
+                <i class="fas fa-code"></i>
+                <span id="logo-typewriter"></span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="paketler.html">Eğitimler</a></li>
+                    <li><a href="hizmet.html">Hizmetler</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                    <li><a href="https://starkdevblog.netlify.app">Blog</a>
+                    <li><a href="bizkimiz.html">Biz Kimiz?</a>
+                </ul>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </div>
+            </nav>
+        </header>
+
+        <section class="page-header reveal">
+            <h1>Teknoloji Çözümlerinde Uzman</h1>
+            <p>Eğitimler ve profesyonel hizmetlerle yanınızdayız</p>
+        </section>
+
+        <div class="card-grid">
+            <div class="card reveal" style="transition-delay: 0.1s;">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Eğitim Paketleri</h3>
+                <p>Uzmanlaşmak için eğitim setlerimizi keşfedin</p>
+                <a href="paketler.html" class="btn btn-secondary">Tüm Paketler</a>
+            </div>
+
+            <div class="card reveal" style="transition-delay: 0.2s;">
+                <i class="fas fa-tools"></i>
+                <h3>Hizmetler</h3>
+                <p>Teknik ihtiyaçlarınız için profesyonel çözümler</p>
+                <a href="hizmet.html" class="btn btn-secondary">Hizmetleri Gör</a>
+            </div>
+
+            <div class="card reveal" style="transition-delay: 0.3s;">
+                <i class="fas fa-headset"></i>
+                <h3>Canlı Destek</h3>
+                <p>1 aylık uzman desteği</p>
+                <div class="price">199.00₺</div>
+                <button class="btn add-to-cart-btn" 
+                        data-id="canli-destek-01" 
+                        data-name="Canlı Destek (1 Ay)" 
+                        data-price="199.00">
+                    Sepete Ekle
+                </button>
+            </div>
+        </div>
+
+        <footer class="reveal">
+            <div class="footer-links">
+                <a href="index.html">Ana Sayfa</a>
+                <a href="paketler.html">Eğitimler</a>
+                <a href="hizmet.html">Hizmetler</a>
+                <a href="iletisim.html">İletişim</a>
+                <a href="bizkimiz.html">Biz Kimiz?</a>
+            </div>
+            <div class="copyright">
+                &copy; 2023 Stark Developer. Tüm hakları saklıdır.
+            </div>
+        </footer>
+    </div>
+
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2>Sepetim</h2>
+                <button class="close-cart">&times;</button>
+            </div>
+            <div class="cart-items">
+                </div>
+            <div class="cart-footer" style="display: none;">
+                <div class="cart-total">
+                    <span class="cart-total-label">Toplam:</span>
+                    <span id="cart-total-price" class="cart-total-price">0.00₺</span>
+                </div>
+                <a href="odeme.html" class="btn" style="width: 100%; text-align: center;">Ödemeye Git</a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
